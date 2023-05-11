@@ -11,8 +11,14 @@ hi
     <script type="text/javascript" src="https://widget.getwhelp.com/app.js" async></script>
     <script type="text/javascript">
         Whelp("init", {
-            app_id: "9834c6a24c23792f79d5e57a367b4744"
-        });
+            app_id: "9834c6a24c23792f79d5e57a367b4744", function onInit(error, user) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('init success', user)
+  }
+});
+       
     </script>
 
 </body>
